@@ -1,0 +1,4 @@
+[2019-06-10 14:36:18.322] [daily_logger] [info] End of example今天的田阳.
+[2019-06-10 15:03:14.305] [daily_logger] [info] End of example今天的田阳.
+[2019-06-10 15:20:54.658] [daily_logger] [info] End of example今天的田阳.
+[2019-06-10 15:22:33.163] [daily_logger] [info] End of example今天的田阳.

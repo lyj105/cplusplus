@@ -1,0 +1,2 @@
+[2019-06-06 13:20:07.731] [daily_logger] [info] End of example今天的田阳.
+[2019-06-06 15:13:47.625] [daily_logger] [info] End of example今天的田阳.
