@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  uploadSocket.cpp
+f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(106): warning C4101: “size”: 未引用的局部变量
+f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(105): warning C4101: “recvBuf”: 未引用的局部变量
+  uploadSocket.vcxproj -> F:\github\cplusplus\vector\Debug\uploadSocket.exe
