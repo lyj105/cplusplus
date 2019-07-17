@@ -169,6 +169,7 @@ int main()
 					nameRecv[i] = nameBuf[i];
 				}
 				nameRecv[nameRecv_size] = '\0';
+
 				if (strcmp(nameRecv, "name_recv") != 0)
 					break;
 
@@ -217,8 +218,7 @@ int main()
 	}
 
 	//关闭socket  
-	closesocket(sockClient);
-
+    closesocket(sockClient);
 	WSACleanup();
     std::cout << "Hello World!\n"; 
 }
