@@ -1,7 +1,1 @@
-﻿  pch.cpp
-  _spdLog.cpp
-f:\github\cplusplus\_spdlog\_spdlog\_spdlog.cpp(47): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\_spdlog\_spdlog\_spdlog.cpp(52): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\_spdlog\_spdlog\_spdlog.cpp(61): warning C4129: “z”: 不可识别的字符转义序列
-f:\github\cplusplus\_spdlog\_spdlog\_spdlog.cpp(61): warning C4129: “s”: 不可识别的字符转义序列
-  _spdLog.vcxproj -> F:\github\cplusplus\vector\x64\Debug\_spdLog.exe
+﻿

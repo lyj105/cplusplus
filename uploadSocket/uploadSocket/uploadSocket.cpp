@@ -120,7 +120,7 @@ int main()
 	//连接到服务端  
 	connect(sockClient, (SOCKADDR*)&addrServer, sizeof(SOCKADDR));
 	//发送数据  
-	//  char message[20] = "HelloSocket!";  
+	//char message[20] = "HelloSocket!";  
 	char recvBuf[30];
 	char size[20];
 
@@ -213,7 +213,7 @@ int main()
 			}
 		}
 
-
+		send(sockClient, "100", 100, 0);
 
 	}
 

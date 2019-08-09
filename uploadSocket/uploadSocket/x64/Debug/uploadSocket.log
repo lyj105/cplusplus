@@ -1,12 +1,1 @@
-﻿  pch.cpp
-  uploadSocket.cpp
-f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(136): warning C4477: “sprintf_s”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
-  f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(136): note: 请考虑在格式字符串中使用“%zd”
-f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(137): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(161): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(177): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(180): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(209): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(125): warning C4101: “size”: 未引用的局部变量
-f:\github\cplusplus\uploadsocket\uploadsocket\uploadsocket.cpp(124): warning C4101: “recvBuf”: 未引用的局部变量
-  uploadSocket.vcxproj -> F:\github\cplusplus\vector\x64\Debug\uploadSocket.exe
+﻿

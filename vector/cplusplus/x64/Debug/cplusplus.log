@@ -1,12 +1,1 @@
-﻿  pch.cpp
-  CParseIniFile.cpp
-  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
-f:\github\cplusplus\vector\cplusplus\cparseinifile.cpp(28): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\vector\cplusplus\cparseinifile.cpp(66): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\vector\cplusplus\cparseinifile.cpp(67): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\vector\cplusplus\cparseinifile.cpp(77): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\vector\cplusplus\cparseinifile.cpp(116): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-  cplusplus.cpp
-  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
-  正在生成代码...
-  cplusplus.vcxproj -> F:\github\cplusplus\vector\x64\Debug\cplusplus.exe
+﻿

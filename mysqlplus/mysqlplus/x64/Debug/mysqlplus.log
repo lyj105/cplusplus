@@ -1,7 +1,1 @@
-﻿  pch.cpp
-  dbmanager.cpp
-f:\github\cplusplus\mysqlplus\mysqlplus\dbmanager.cpp(102): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-f:\github\cplusplus\mysqlplus\mysqlplus\dbmanager.cpp(126): warning C4267: “参数”: 从“size_t”转换到“unsigned long”，可能丢失数据
-  mysqlplus.cpp
-  正在生成代码...
-  mysqlplus.vcxproj -> F:\github\cplusplus\vector\x64\Debug\mysqlplus.exe
+﻿
