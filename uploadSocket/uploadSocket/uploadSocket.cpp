@@ -79,11 +79,21 @@ void getFiles(std::string path, vector<std::string>& files)
 	}
 
 }
+#include <thread>
+int func();
 
 
 int main()
 {
+	std::cout << "start" << std::endl;
 
+	//thread th1(func);
+	func();
+
+	std::cout << "end" << std::endl;
+}
+
+int func() {
 	WSADATA wsaData;
 	SOCKET sockClient;//客户端Socket  
 	SOCKADDR_IN addrServer;//服务端地址  
@@ -119,18 +129,39 @@ int main()
 	addrServer.sin_port = htons(6000);//连接端口6000  
 	//连接到服务端  
 	connect(sockClient, (SOCKADDR*)&addrServer, sizeof(SOCKADDR));
+
+	//传入计划的ID
+
+
 	//发送数据  
 	//char message[20] = "HelloSocket!";  
 	char recvBuf[30];
 	char size[20];
 
-	string path = "F:\\a";
+	string path = "F:\\vtk_dicom\\2019_04_19_14_14_49";
 	vector<string> files;
 
 	getFiles(path, files);
 
 	if (files.size() > 0)
 	{
+		char file_nums[256];
+		int fulemx = 8;
+		sprintf_s(file_nums, "%d", fulemx);
+		send(sockClient, file_nums, strlen(file_nums), 0);
+		//服务端确认收到
+		int sizeRecv_size_y;
+		char sizeBuf_y[1024];
+		sizeRecv_size_y = recv(sockClient, sizeBuf_y, 1024, 0);
+		char* sizeRecv_y = new char[sizeRecv_size_y + 1];
+		for (int i = 0; i < sizeRecv_size_y; i++)
+			sizeRecv_y[i] = sizeBuf_y[i];
+		sizeRecv_y[sizeRecv_size_y] = '\0';
+		if (strcmp(sizeRecv_y, "plan_recv") != 0)
+		{
+			//return -1;
+		}
+
 		//发送文件数量
 		char file_num[256];
 		sprintf_s(file_num, "%d", files.size());
@@ -148,6 +179,8 @@ int main()
 		{
 			for (auto it = files.begin(); it != files.end(); it++)
 			{
+				//
+
 				//发送文件名
 				size_t pos;
 				pos = it->find_last_of("/\\");
@@ -191,7 +224,7 @@ int main()
 
 				FILE * file;
 				//file = fopen(it->c_str(), "rb");
-			    int	err = fopen_s(&file, it->c_str(), "rb");
+				int	err = fopen_s(&file, it->c_str(), "rb");
 				if (err == 0)
 				{
 					printf("The file 'crt_fopen_s.c' was opened\n");
@@ -218,8 +251,7 @@ int main()
 	}
 
 	//关闭socket  
-    closesocket(sockClient);
+	closesocket(sockClient);
 	WSACleanup();
-    std::cout << "Hello World!\n"; 
+	std::cout << "Hello World!\n";
 }
-
